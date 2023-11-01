@@ -1,0 +1,105 @@
+.app__aboutus {
+   position: relative;
+}
+.app__aboutus-overlay {
+   position: absolute;
+   inset: 0;
+}
+.app__aboutus-overlay img {
+   width: 391px;
+   height: 415px;
+   z-index: 0;
+   flex-shrink: 0;
+}
+
+.app__aboutus-content {
+   width: 100%;
+   z-index: 2;
+}
+
+.app__aboutus-content_about {
+   flex: 1px;
+   display: flex;
+   justify-content: flex-end;
+   flex-direction: column;
+   text-align: right;
+   align-items: flex-end;
+}
+
+.app__aboutus-content_knife {
+   margin: 2rem 4rem;
+}
+.app__aboutus-content_knife img {
+   height: 600px;
+   flex-shrink: 0;
+}
+.app__aboutus-content_history {
+   flex: 1px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+   text-align: left;
+   align-items: flex-start;
+}
+.app__aboutus-content_history p,
+.app__aboutus-content_about p {
+   margin: 2rem 0;
+   color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+   .app__aboutus-content_knife img {
+      height: 1100px;
+   }
+   .app__aboutus-content_history p,
+   .app__aboutus-content_about p {
+      margin: 4rem 0;
+   }
+}
+@media screen and (max-width: 1400px) {
+   .app__aboutus-content_knife img {
+      height: 600px;
+   }
+   .app__aboutus-content_history p,
+   .app__aboutus-content_about p {
+      margin: 2rem 0;
+   }
+}
+@media screen and (max-width: 900px) {
+   .app__aboutus-content {
+      flex-direction: column;
+   }
+   .app__aboutus-content_knife {
+      margin: 4rem 0;
+   }
+   .app__aboutus-content_knife img {
+      height: 500px;
+   }
+   .app__aboutus-content_history,
+   .app__aboutus-content_about {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: left;
+      align-items: flex-start;
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .app__aboutus-overlay img {
+      width: 80%;
+      height: 320px;
+      flex-shrink: 0;
+   }
+  
+}
+
+@media screen and (max-width: 350px) {
+   .app__aboutus-content_history,
+   .app__aboutus-content_about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+   }
+}
