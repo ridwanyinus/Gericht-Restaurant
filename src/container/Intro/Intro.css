@@ -26,3 +26,14 @@
    background: rgba(0, 0, 0, 0.45);
    transition: 0.35s ease;
 }
+
+@media screen and (max-width: 450px) {
+   .app__video-overlay {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+   }
+   .app__video-overlay_cirle {
+      position: relative;
+   }
+}
